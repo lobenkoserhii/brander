@@ -70,7 +70,7 @@ function Testimonials() {
   const currentTestimonial = testimonialsData[currentIndex];
 
   return (
-    <motion.div ref={ref} initial="hidden" animate={control} variants={variants} className="py-[60px] mx-auto bg-white dark:bg-black text-black dark:text-white">
+    <motion.div ref={ref} initial="hidden" animate={control} variants={variants} className="mx-auto bg-white dark:bg-black text-black dark:text-white">
       <div className="mx-auto">
         <div className="text-center text-stone-300 text-[40px] TB:text-[64px] TB:leading-[76.80px] font-bold leading-[48px]">Testimonials</div>
         <div className="flex flex-col TB:flex-row justify-center items-center gap-8 m-10 bg-gray-200 dark:bg-gray-800 rounded-[30px] p-10 drop-shadow-lg">
@@ -81,29 +81,26 @@ function Testimonials() {
             rating={currentTestimonial.rating}
           />
         </div>
-        <div className="flex justify-center items-center  gap-4 mt-8">
-          <button onClick={goToPrev} className="p-3 rounded-full border border-black dark:border-white  flex justify-center items-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-150">
-         
+        <div className="flex justify-center items-center gap-4 mt-8">
+          <button onClick={goToPrev} className="p-3 rounded-full border border-black dark:border-white flex justify-center items-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-150">
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>
             </svg>
           </button>
           <button onClick={goToNext} className="p-3 rounded-full border border-black dark:border-white flex justify-center items-center hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition duration-150">
-          
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
             </svg>
           </button>
         </div>
-      
         <div className="flex justify-center mt-4">
           {testimonialsData.map((_item, index) => (
             <span key={index} className={`inline-block mx-1 w-3 h-3 rounded-full ${currentIndex === index ? 'bg-black dark:bg-white' : 'bg-gray-300 dark:bg-gray-600'}`} />
           ))}
         </div>
       </div>
-      </motion.div>
-    );
-  }
-  
+    </motion.div>
+  );
+}
+
 export default Testimonials;

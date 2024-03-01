@@ -172,3 +172,28 @@ export const NAV_LINKS = [
     { name: 'Miami' },
     { name: 'Los Angeles' },
 ];
+
+export const SOCIAL_LINKS = [
+  {
+    name: "Facebook",
+    url: "https://facebook.com/",
+    logo: "facebook.svg",
+    alt: "Facebook"
+  },
+  {
+    name: "Instagram",
+    url: "https://instagram.com/",
+    logo: "instagram.svg", // Аналогично
+    alt: "Instagram"
+  },
+
+
+  {
+    name: "LinkedIn",
+    url: "https://linkedin.com/yourpage",
+    logo: "linkedin.svg", // Аналогично
+    alt: "LinkedIn"
+  },
+ 
+
+];

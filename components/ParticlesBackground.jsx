@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useTheme } from "./ThemeContext";
 
-const ParticlesBackground = ({ speed = 2, size = 5, number = 70 }) => {
+const ParticlesBackground = ({ speed = 2, size = 5, number = 100 }) => {
     const { theme } = useTheme();
     const canvasRef = useRef(null);
     const [windowSize, setWindowSize] = useState({

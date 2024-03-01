@@ -58,7 +58,8 @@ const Locations = () => {
   };
 
   return (
-    <motion.div className="overflow-hidden" ref={ref} variants={marqueeVariants} initial="hidden" animate={control}>
+    <motion.div className="overflow-hidden relative" ref={ref} variants={marqueeVariants} initial="hidden" animate={control}>
+
       <div className="text-center text-stone-300 text-[64px] font-bold leading-[76.80px] mt-10">Locations</div>
       <h2>Мы тут</h2>
       <motion.div className="flex" variants={marqueeVariants} animate="animate">
@@ -70,6 +71,7 @@ const Locations = () => {
       </motion.div>
       <div className="absolute left-0 top-0 bottom-0 w-[30px] bg-gradient-to-r from-white to-transparent dark:from-black"></div>
       <div className="absolute right-0 top-0 bottom-0 w-[30px] bg-gradient-to-l from-white to-transparent dark:from-black"></div>
+
     </motion.div>
   );
 };

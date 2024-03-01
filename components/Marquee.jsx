@@ -57,9 +57,9 @@ const CustomMarquee = () => {
   };
 
   return (
-    <motion.div className="overflow-hidden" ref={ref} variants={marqueeVariants} initial="hidden" animate={control}>
+    <motion.div className="overflow-hidden relative" ref={ref} variants={marqueeVariants} initial="hidden" animate={control}>
       
-      <motion.div className="flex" variants={marqueeVariants} animate="animate">
+      <motion.div className="flex " variants={marqueeVariants} animate="animate">
         {extendedLogos.map((logo, index) => (
           <motion.div key={index} className="flex flex-row justify-center items-center gap-2 p-3 m-2 bg-gray-200 dark:bg-gray-800 rounded-lg drop-shadow-lg" style={{ minWidth: '200px', maxWidth: '350px' }}>
             <img src={logo.src} alt={logo.alt} className="w-12 h-12" />

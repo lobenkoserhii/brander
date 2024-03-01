@@ -12,6 +12,7 @@ import Marquee from "./Marquee"
 import FAQ from "./FAQ"
 import Locations from "./Locations"
 import Contact from "./Contact"
+import Footer from "./Footer"
 
 import { ThemeContext } from "./ThemeContext";
 
@@ -24,12 +25,12 @@ const Hero = () => {
       <Nav />
       <div className="relative">
         
-        <div className="absolute inset-0 z-0">
-          <ParticlesBackground key={theme} />
+        <div className="absolute inset-0 z-0 ">
+          <ParticlesBackground key={theme}/>
         </div>
        
         <div className="relative z-10">
-        <div className="absolute top-0 w-full h-full z-2 glass-matt1">
+        <div className="absolute top-0 w-full h-screen z-0 glass-matt1">
     
   </div>
           
@@ -38,16 +39,18 @@ const Hero = () => {
       </div>
 
       
-      <div className="mx-auto max-w-[1440px] relative">
+      <div className="mx-auto max-w-[1440px] relative z-10">
         <AboutUs />
         <Services/>
         <Portfolio/>
+        <TestimonialsSlider/>
         <Phase/>
         <Marquee/>
-        <TestimonialsSlider/>
+        
         <FAQ/>
         <Locations/>
         <Contact/>
+        <Footer/>
         
       </div>
     </section>

@@ -60,6 +60,14 @@ backdrop-filter: blur(5px);
   backdrop-filter: blur( px );
   -webkit-backdrop-filter: blur( 4px );
   }
+  .glass-matt-dark {
+    background: rgba(0, 0, 0, 0.8); /* Темный фон */
+    box-shadow: 0 1px 10px 0 rgba(255, 255, 255, 0.1); /* Светлая тень для контраста */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+
   .glass-matt1 {
   
     background: rgba( 255, 255, 255, 0.01 );
@@ -190,4 +198,3 @@ backdrop-filter: blur(5px);
   margin-left: auto;
   margin-right: auto;
 }
-

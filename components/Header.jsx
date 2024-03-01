@@ -45,12 +45,15 @@ const Header = () => {
   }, []);
 
   
+
+  
   const gradientClass = theme === 'dark' ? 'radial-gradient-background dark' : 'radial-gradient-background';
 
   return (
-    <header className="relative mt-[200px] w-full overflow-hidden">
-      <div className="relative absolute inset-0 flex justify-center items-center">
-        <div className={`${gradientClass}z-10 w-[870px] mx-[70px] my-16 flex flex-col justify-center items-center gap-6 text-black dark:text-white`}>
+    <header className="flex justify-center items-center h-[1000px] w-full pt-[100px]">
+
+      <div className="absolute inset-0 flex justify-center items-center">
+        <div className={`${gradientClass}z-10 max-w-[870px] m-10 flex flex-col justify-center items-center gap-5 text-black dark:text-white`}>
           <div className="text-center text-4xl leading-[43.20px] TB:text-[64px] font-bold TB:leading-[76.80px]">
             <span>Elevate Your </span>
             <span className="gradient-text">Brand<br/></span>
